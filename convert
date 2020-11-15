@@ -5,7 +5,7 @@
 #define SIZE 255
 #define ALG 17
 
-// Esta função converte um número decimal para a base 2, 8 ou 16.
+// Essa função converte um número decimal para a base 2, 8 ou 16.
 // Recebe como parâmetro um número decimal (num_dec), e a base (base) cujo número será convertido.
 void decToBase(int num_dec, int base) {
    char resto[ALG] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'}, num_conv[SIZE];
@@ -46,7 +46,7 @@ void baseToDec(char* num_base, int base) {
         len++;
     }
     
-    // Neste loop, a string é percorrida de trás para frente. Cada caractere é convertido
+    // Nesse loop, a string é percorrida de trás para frente. Cada caractere é convertido
     // em um número inteiro, multiplicado pela base elevada ao expoente (0..Comprimento da string) 
     // e somado ao valor da variável 'dec', que recebe as somas sucessivas. 
     for(exp, indx=(len-1); exp < len; exp++, indx--) {
